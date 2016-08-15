@@ -1,0 +1,40 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 5px;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+.sidebar{
+  background: #ededed;
+}
+#control{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 260px;
+}
+
+.control-link{
+  display: inline-block;
+  margin: 3px;
+
+}
+
+#storypoints{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.storypoint{
+  display: inline-block;
+  margin: 3px;
+  }
+
+.active{
+  background: red;
+}
+
+#map-container{
+  height:600px;
+}

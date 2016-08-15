@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Storypoints</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-rc.1/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id='map-wrapper'>
+    <div id="map-container">
+    </div><!--/#map-container-->
+    <div class='map-overlay'>
+      <div class="container">
+        <div class="row">
+          <div class="sidebar col-sm-4 col-md-4 col-lg-4">
+            <h1>Storypoints</h2>
+            <h3>Controls:</h3>
+            <div id="control">
+              <a id="" class="control-backward control-link btn btn-sm btn-default" href="#"><</a>
+              <a id="" class="control-forward control-link btn btn-sm btn-default" href="#">></a>
+              <a id="" class="control-play control-link btn btn-sm btn-default" href="#">play</a>
+              <a id="" class="control-reset control-link btn btn-sm btn-default" href="#">reset</a>
+            </div>
+            <h3>Storypoints:</h3>
+            <div id="storypoints">
+            </div><!--/#storypoints-->
+            <h3>Debug:</h3>
+            <div id="debug">
+              <h3 id='debug-wrap'>
+                <span id="debug-num" class="label label-default">1</span>
+              </h3>
+            </div><!--/#Debug-->
+          </div><!--/.sidebar-->
+          <div class="main col-sm-8 col-md-8 col-lg-8">
+            <div class="story-output"></div>
+          </div>
+        </div>
+      </div><!--/.container-->
+    </div><!--/.map-overlay-->
+  </div><!--/#map-wrapper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-rc.1/leaflet.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
